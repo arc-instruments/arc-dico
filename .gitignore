@@ -1,0 +1,11 @@
+gcc/*
+!gcc/Makefile
+armcc/*
+!armcc/Makefile
+examples/*
+*.o
+*.so
+*.d
+*.elf
+*.hex
+*.bin
