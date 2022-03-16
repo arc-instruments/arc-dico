@@ -25,8 +25,10 @@
 #define CMD_OUTP_DISABLE 0x03
 // Set voltage; don't touch switches
 #define CMD_SET_VOLTAGE  0x04
+// Set pins; don't touch voltage
+#define CMD_SET_PINS     0x05
 // Open switches; set DAC to 0 V
-#define CMD_CLEAR        0x05
+#define CMD_CLEAR        0x06
 
 
 void connect_output(void);
@@ -134,6 +136,11 @@ void process_packet(dico_packet *const p, dico_response *r)
 			r->status = EOK;
 			r->payload = 0;
 			return;
+        case CMD_SET_PINS:
+            set_switch_mask(p->bitmask);
+            r->status = EOK;
+            r->payload = 0;
+            return;
 		case CMD_CLEAR:
 			set_dac_output(0x0);
 			clear_switch_mask();
