@@ -9,3 +9,7 @@ examples/*
 *.elf
 *.hex
 *.bin
+arcdico/dist/*
+arcdico/build/*
+arcdico/poetry.lock
+__pycache__
