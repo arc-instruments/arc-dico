@@ -1,5 +1,12 @@
-gcc/*
+#gcc/*
+gcc/*.eep
+gcc/*.lss
+gcc/*.map
+gcc/gcc/*
 !gcc/Makefile
+!gcc/system_samd10.c
+!gcc/gcc/startup_samd10.c
+!gcc/gcc/*.ld
 armcc/*
 !armcc/Makefile
 examples/*
@@ -9,6 +16,8 @@ examples/*
 *.elf
 *.hex
 *.bin
+*.orig
+*.bak
 arcdico/dist/*
 arcdico/build/*
 arcdico/poetry.lock
