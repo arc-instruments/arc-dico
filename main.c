@@ -31,9 +31,6 @@
 #define CMD_CLEAR        0x06
 
 
-void connect_output(void);
-
-
 typedef struct _dico_packet_t {
 	uint8_t  command;
 	uint8_t  _reserved;
