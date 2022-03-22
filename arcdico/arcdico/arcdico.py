@@ -59,7 +59,7 @@ CHANMAP = [ 0,  1,  2,  3, \
 
 class DiCo:
 
-    VMAX = 15.0
+    VMAX = 18.2589
     DACMAX = 1024
     PACKET_FORMAT = '<BxH4B'
     RESP_FORMAT = '<BxH'
