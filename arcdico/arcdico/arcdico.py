@@ -165,6 +165,10 @@ class DiCo:
         else:
             raise TypeError("Need a pin list to make mask")
 
+    def close(self):
+        """ Disconnect from the DiCo serial port """
+        self._port.close()
+
     def reset(self):
         """
         Resets the DiCo (``Command.CLEAR``). This will set voltage to 0.0 V
