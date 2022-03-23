@@ -77,7 +77,7 @@ class DiCo:
     def __voltage_to_idx(self, voltage):
         vidx = int((self.DACMAX * voltage)/self.VMAX)
 
-        if vidx > self.DACMAX:
+        if vidx >= self.DACMAX:
             raise ValueError("Requested Voltage out of range")
 
         return vidx
