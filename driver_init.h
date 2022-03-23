@@ -1,9 +1,7 @@
 /*
- * Code generated from Atmel Start.
- *
- * This file will be overwritten when reconfiguring your Atmel Start project.
- * Please copy examples or other code you want to keep to a separate file
- * to avoid losing it when reconfiguring.
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 #ifndef DRIVER_INIT_INCLUDED
 #define DRIVER_INIT_INCLUDED
@@ -47,10 +45,6 @@ void DAC_0_PORT_init(void);
 void DAC_0_CLOCK_init(void);
 void DAC_0_init(void);
 
-/**
- * \brief Perform system initialization, initialize pins and clocks for
- * peripherals
- */
 void system_init(void);
 
 #ifdef __cplusplus

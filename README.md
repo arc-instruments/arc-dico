@@ -40,3 +40,11 @@ The μC will be reset and it's ready for operation. It accepts commands over
 serial with baud 57600. A simple [Python
 wrapper](https://github.com/arc-instruments/arc-dico/tree/master/arcdico) is
 provided.
+
+## License
+
+Bootstrapping code provided by Atmel/Microchip is licensed under Apache
+Software Foundation License 2.0. This covers code under the `config`, `hal`,
+`hpl`, `hri`, `include`, `CMSIS` as well as the startup code for SAMD10D13
+(`gcc/gcc/startup_samd10.c`). Everything else is licensed under the Mozilla
+Public License 2.0.
