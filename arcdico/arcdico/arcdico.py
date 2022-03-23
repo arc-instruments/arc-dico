@@ -88,6 +88,11 @@ class DiCo:
 
     def __mask_from_pins(self, pins):
         if isinstance(pins, abc.Sequence) and not isinstance(pins, str):
+            if len(pins) == 0:
+                raise ValueError("Must provide a non-empty list of pins to connect")
+
+            if max(pins) > 31:
+                raise ValueError("Highest pin number must not exceed 31")
             # ensure selected pins are unique
             pins = set(pins)
             # find the channels that correspond to selected pins
