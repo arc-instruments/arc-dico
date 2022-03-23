@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "arcdico"
-version = "0.1.0"
+version = "1.0.0"
 description = "Python module to interact with the ArC Instruments Digital Control Module"
 authors = ["Spyros Stathopoulos <spyros@arc-instruments.co.uk>"]
 readme = "README.md"
@@ -11,10 +11,10 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3 :: 3.7",
-    "Programming Language :: Python :: 3 :: 3.8",
-    "Programming Language :: Python :: 3 :: 3.9",
-    "Programming Language :: Python :: 3 :: 3.10",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
     "Topic :: Scientific/Engineering",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: System :: Hardware",
